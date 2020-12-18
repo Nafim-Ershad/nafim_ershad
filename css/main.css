@@ -11,27 +11,32 @@
 				justify-content: space-between;
 				align-items: center;
 				margin: 0;
-				height: 65px;
+				height: 75px;
 				border: none;
 				border-radius: 10px;
 				padding: 20px;
-				padding-top: 40px;
+				padding-top: 30px;
 }
 .nav nav {
 				margin-left: 0;
+				padding-left: 0;
+				margin-top: 20px;
 }
 .nav nav ul {
 				display: flex;
 				justify-content: space-between;
+				align-items: center;
 				text-decoration: none;
 				list-style: none;
 				position: relative;
 				left: 0;
-				padding-left: 10px;
 				margin: 10px;
+				padding-left: 0;
 }
 .nav nav ul li {
 				padding: 10px;
+				margin: 20px;
+				margin-left: 0;
 				border: none;
 				border-radius: 8px;
 				text-align: center;
@@ -44,25 +49,36 @@
 }
 .nav nav ul .arrow {
 				position: absolute;
-				left: 100px;
+				left: 65px;
 				opacity: 0;
 }
 @media screen and (max-width: 415px) {
+				.nav nav ul {
+								display: flex;
+								justify-content: space-between;
+								text-decoration: none;
+								list-style: none;
+								position: relative;
+								left: 0;
+								padding-left: 0;
+								margin: 5px;
+				}
 				.nav nav ul .about {
-								opacity: 0;
+								display: none;
 				}
 				.nav nav ul .projects {
-								opacity: 0;
+								display: none;
 				}
 				.nav nav ul .arrow {
 								opacity: 1;
 				}
 }
 .nav .contact {
-				margin: 10px;
+				margin: 5px;
+				margin-top: 30px;
 				padding: 20px;
 				border: none;
-				border-radius: 10px;
+				border-radius: 20px;
 				text-align: center;
 				background-color: #ff9900;
 				transition: all 0.3s ease-out;
@@ -72,4 +88,23 @@
 				transition: all 0.3s ease-in;
 				background-color: #fc5000;
 				color: white;
+}
+@media screen and (max-width: 415px) {
+				.nav .contact {
+								width: 40vw;
+								padding: 10px;
+								margin: 10px;
+								margin-top: 15px;
+								border: none;
+								border-radius: 10px;
+								text-align: center;
+								background-color: #ff9900;
+								transition: all 0.3s ease-out;
+				}
+				.nav .contact:hover {
+								cursor: pointer;
+								transition: all 0.3s ease-in;
+								background-color: #fc5000;
+								color: white;
+				}
 }
